@@ -20,7 +20,7 @@ module.exports = {
           '@motify/components',
           '@motify/core',
           '@motify/skeleton',
-          '@motify/interactions',
+          // '@motify/interactions',
           // 'expo-next-react-navigation',
           // '@zeego/menu',
           // '@zeego/dropdown-menu',
