@@ -1,7 +1,6 @@
-// export { Button } from 'react-native'
-
 import React from 'react'
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+import { StyleSheet, TouchableOpacity } from 'react-native'
+import { View, Text } from 'dripsy'
 
 export type ButtonProps = {
   onPress: () => void

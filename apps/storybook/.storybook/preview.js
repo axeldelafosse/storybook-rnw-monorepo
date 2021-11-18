@@ -1,6 +1,10 @@
 import '../styles/globals.css'
 
+import React from 'react'
 import * as NextImage from 'next/image'
+import { DripsyProvider } from 'dripsy'
+
+import { theme } from 'app/theme'
 
 const OriginalNextImage = NextImage.default
 
@@ -18,3 +22,11 @@ export const parameters = {
     }
   }
 }
+
+export const decorators = [
+  (Story) => (
+    <DripsyProvider theme={theme}>
+      <Story />
+    </DripsyProvider>
+  )
+]
