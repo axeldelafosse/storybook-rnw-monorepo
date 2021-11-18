@@ -35,10 +35,9 @@ module.exports = {
   },
   typescript: { reactDocgen: false },
   webpackFinal: async (config) => {
-    // config.module.rules[config.module.rules.length - 1].include.push(
-    //   path.resolve('../../packages/app')
-    // )
-    // config.module.rules[0].include.push(path.resolve('../../packages/app'))
+    config.module.rules[config.module.rules.length - 1].include.push(
+      path.resolve('../../packages/app')
+    )
 
     return config
   }
