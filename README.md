@@ -1,3 +1,11 @@
+Here is a reproduction of some issues encountered when using Storybook with React Native for Web in a monorepo.
+
+`https://github.com/axeldelafosse/storybook-rnw-monorepo/blob/main/apps/storybook/stories/Button.stories.tsx` we are importing `import { Button } from 'app/design-system/button'` -> `https://github.com/axeldelafosse/storybook-rnw-monorepo/blob/main/packages/app/design-system/button.tsx`
+
+https://github.com/storybookjs/addon-react-native-web/issues/12
+
+---
+
 # Expo + Next.js Monorepo Example
 
 Here is an example showing how to create a universal React app using Expo and Next.js in a monorepo.
