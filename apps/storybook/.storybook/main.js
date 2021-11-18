@@ -15,16 +15,12 @@ module.exports = {
         modulesToTranspile: [
           'dripsy',
           '@dripsy/core',
-          // 'twrnc',
           'moti',
           '@motify/components',
           '@motify/core',
           '@motify/skeleton',
-          // '@motify/interactions',
-          // 'expo-next-react-navigation',
-          // '@zeego/menu',
-          // '@zeego/dropdown-menu',
-          'react-native-reanimated'
+          'react-native-reanimated',
+          'expo-linear-gradient'
         ],
         babelPlugins: ['react-native-reanimated/plugin']
       }
@@ -35,10 +31,11 @@ module.exports = {
   },
   typescript: { reactDocgen: false },
   webpackFinal: async (config) => {
-    config.module.rules[config.module.rules.length - 1].include.push(
-      path.resolve('../../packages/app')
-    )
-
-    return config
+    const { withUnimodules } = require('@expo/webpack-config/addons')
+    return withUnimodules(config, {
+      babel: {
+        dangerouslyAddModulePathsToTranspile: ['app']
+      }
+    })
   }
 }
