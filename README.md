@@ -4,7 +4,23 @@ Here is a reproduction of some issues encountered when using Storybook with Reac
 
 https://github.com/storybookjs/addon-react-native-web/issues/12
 
----
+ ```
+ 99% done plugins webpack-hot-middlewarewebpack built preview 575381016c2503db7b70 in 15381ms
+ ModuleBuildError: Module build failed (from ../../node_modules/babel-loader/lib/index.js):
+ SyntaxError: /Users/axel/Documents/showtime/showtime/node_modules/react-native-reanimated/lib/createAnimatedComponent.js: Missing class properties transform.
+   67 |
+   68 |   class AnimatedComponent extends React.Component {
+ > 69 |     _invokeAnimatedPropsCallbackOnMount = false;
+      |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   70 |
+   71 |     constructor(props) {
+   72 |       super(props);
+     at File.buildCodeFrameError (/Users/axel/Documents/showtime/showtime/node_modules/@babel/core/lib/transformation/file/file.js:249:12)
+ ```
+
+ `moti` uses `react-native-reanimated` but it doesn't get transpiled. I remember getting this issue with Next.js at some point.
+
+ ---
 
 # Expo + Next.js Monorepo Example
 
