@@ -1,4 +1,4 @@
-import React, { useReducer } from 'react'
+import { useReducer } from 'react'
 import { StyleSheet, Pressable } from 'react-native'
 import { MotiView } from 'moti'
 import { Skeleton } from '@motify/skeleton'
