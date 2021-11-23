@@ -3542,10 +3542,10 @@
   resolved "https://registry.yarnpkg.com/@storybook/addon-measure/-/addon-measure-2.0.0.tgz#c40bbe91bacd3f795963dc1ee6ff86be87deeda9"
   integrity sha512-ZhdT++cX+L9LwjhGYggvYUUVQH/MGn2rwbrAwCMzA/f2QTFvkjxzX8nDgMxIhaLCDC+gHIxfJG2wrWN0jkBr3g==
 
-"@storybook/addon-react-native-web@^0.0.7":
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-react-native-web/-/addon-react-native-web-0.0.7.tgz#6729bf0fe8ec7e621134e0f24574310413269a7f"
-  integrity sha512-ON0Gy+ps0UeNJUgWgv8TzGiVrcH2N+CFxuHC7TEcazWzz/oBBzyilSLnY/T+f3b1dAAE3sbVI3fuKVQpB5oqfA==
+"@storybook/addon-react-native-web@0.0.8-canary.13.d8a51bb.0":
+  version "0.0.8-canary.13.d8a51bb.0"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-react-native-web/-/addon-react-native-web-0.0.8-canary.13.d8a51bb.0.tgz#7bbbeba9b4dc9f08ad1e813dc455c487d6e14a29"
+  integrity sha512-3fG8lhXyjGee17wlRpO0NmWfsAqUFYbdzjgOurNxDE1TgUTbOqxzMSj6wT5n1hn4OcOz3GUeNHauZEldIDksrg==
 
 "@storybook/addon-toolbars@6.3.12":
   version "6.3.12"
@@ -5630,7 +5630,7 @@ babel-plugin-syntax-trailing-function-commas@^7.0.0-beta.0:
   resolved "https://registry.yarnpkg.com/babel-plugin-syntax-trailing-function-commas/-/babel-plugin-syntax-trailing-function-commas-7.0.0-beta.0.tgz#aa213c1435e2bffeb6fca842287ef534ad05d5cf"
   integrity sha512-Xj9XuRuz3nTSbaTXWv3itLOcxyF4oPD8douBBmj7U9BBC6nEBYfyOJYQMf/8PJAFotC62UY5dFfIGEPr7WswzQ==
 
-babel-preset-expo@^8.4.1, babel-preset-expo@~8.5.1:
+babel-preset-expo@^8.4.1, babel-preset-expo@^8.5.1, babel-preset-expo@~8.5.1:
   version "8.5.1"
   resolved "https://registry.yarnpkg.com/babel-preset-expo/-/babel-preset-expo-8.5.1.tgz#aac627a6c85b3c0904a226596c6243fac9f19491"
   integrity sha512-qQVG6Twn7tymODw8cH+85QtzFqcD0ckLWgVLC8pzRkwLKP5lIs5gtiYdoUsvhvyWWesSFR9VlhN0HE2Nu7WCWQ==
