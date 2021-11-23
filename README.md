@@ -1,4 +1,4 @@
-# Expo + Next.js Monorepo Example
+# Expo + Next.js + Storybook (using React Native for Web) Monorepo Example
 
 Here is an example showing how to create a universal React app using Expo and Next.js in a monorepo.
 
@@ -12,6 +12,7 @@ You'll find included:
 - Reanimated
 - React Native Bottom Sheet
 - Dripsy
+- Storybook using React Native for Web
 
 And ready-to-use (small configuration required):
 
@@ -33,9 +34,9 @@ And ready-to-use (small configuration required):
 
 Expo entrypoint: `packages/expo/App.tsx`
 
-`cd packages/expo`
+`cd apps/expo`
 
-`yarn start:expo` to start iOS and Android app with Expo
+`yarn dev` to start iOS and Android app with Expo
 
 Demo: https://expo.dev/@poolpoolpool/example?release-channel=production
 
@@ -47,11 +48,21 @@ Pro tip: build and launch a custom development client with `SCHEME=com.example.a
 
 Next.js entrypoint: `packages/next/src/pages/_app.tsx`
 
-`cd packages/next`
+`cd apps/next`
 
 `yarn dev` to start web app
 
 Demo: https://expo-next-monorepo-example.vercel.app
+
+### Storybook React
+
+> Storybook for Web (using React Native for Web)
+
+Storybook config: `apps/storybook/.storybook/*`
+
+`cd apps/storybook`
+
+`yarn storybook` to start Storybook
 
 ## Notes
 

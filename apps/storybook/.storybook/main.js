@@ -29,13 +29,5 @@ module.exports = {
   core: {
     builder: 'webpack5'
   },
-  typescript: { reactDocgen: false },
-  webpackFinal: async (config) => {
-    const { withUnimodules } = require('@expo/webpack-config/addons')
-    return withUnimodules(config, {
-      babel: {
-        dangerouslyAddModulePathsToTranspile: ['app']
-      }
-    })
-  }
+  typescript: { reactDocgen: false }
 }

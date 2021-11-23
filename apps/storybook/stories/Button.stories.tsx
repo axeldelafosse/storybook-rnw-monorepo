@@ -1,5 +1,3 @@
-import React from 'react'
-// import { Button } from 'react-native'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 
 import { Button } from 'app/design-system/button'
