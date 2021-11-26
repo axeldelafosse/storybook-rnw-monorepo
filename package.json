@@ -8,12 +8,15 @@
   "workspaces": [
     "apps/expo",
     "apps/next",
-    "apps/storybook",
+    "apps/storybook-react",
+    "apps/storybook-react-native",
     "packages/*"
   ],
   "scripts": {
     "dev:expo": "yarn workspace @expo-next-monorepo-example/expo dev",
     "dev:next": "yarn workspace @expo-next-monorepo-example/next dev",
+    "dev:storybook:react": "yarn workspace @showtime/storybook-react storybook",
+    "dev:storybook:react-native": "yarn workspace @showtime/storybook-react-native start",
     "build": "cd packages/next && yarn build",
     "deploy": "vercel --prod --no-clipboard",
     "postinstall": "patch-package"
